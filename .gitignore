@@ -1,2 +1,4 @@
 /node_modules
 site_struckture.json
+dist/
+mongoURI.ts

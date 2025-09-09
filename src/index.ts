@@ -1,4 +1,5 @@
 // server-mongoose.js
+import mongoURI from './mongoURI.js';
 import express from 'express';
 import mongoose from 'mongoose';
 import { productsRouter } from './routes/productsRouter.js';
@@ -7,7 +8,7 @@ import { tabsRouter } from './routes/tabsRouter.js';
 import { siteRouter } from './routes/siteRouter.js';
 
 const app = express();
-const uri = 'mongodb+srv://admin:admin@cluster0.sjqio0c.mongodb.net/shop?retryWrites=true&w=majority&appName=Cluster0';
+const uri = mongoURI;
 
 app.use(express.json());
 
